@@ -1,7 +1,5 @@
 /*
   p5.bezier.js animation example
-  Peiling Jiang
-  UCSD Design Lab 2023
 */
 
 let t = 0 // set up a variable for time
