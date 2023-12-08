@@ -1,0 +1,18 @@
+To control movement of the camera in the scene:
+
+rotate around the look-at point (it will feel like the object is moving)
+
+mouse: left-click and drag
+touch: one-finger drag
+pan the scene
+
+mouse: middle-click and drag 
+touch: two-finger drag
+zoom out/in
+
+mouse: right-click drag down/up
+touch: pinch/spread
+reset to the starting state
+
+mouse: double-click
+touch: double-tap
