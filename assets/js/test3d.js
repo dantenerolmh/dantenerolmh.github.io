@@ -11,7 +11,7 @@ function setup() {
 function draw() {
   background(0);
 	lights();
-	box(200);
+	box(100);
 }
 
 function windowResized() {
