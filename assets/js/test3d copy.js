@@ -1,3 +1,6 @@
+let deskModel; //桌子3d模型
+let deskTexture; //桌子材质
+
 var easycam,
   state = {
     distance: 208,
@@ -8,6 +11,10 @@ var easycam,
 
 function preload() {
   f = loadFont('https://cdnjs.cloudflare.com/ajax/libs/ink/3.1.10/fonts/Roboto/roboto-regular-webfont.ttf');
+  deskModel = loadModel('assets/models/desk.obj', true);
+
+  deskTexture = loadImage("assets/models/textures/deskTexture.jpg");
+  textureMode(NORMAL);
 }
 
 function setup() {
@@ -32,8 +39,12 @@ function setup() {
 
 function draw() {
   background(0);
-  lights();
-  box(100);
+  ambientLight(500);
+
+  texture(deskTexture);
+  noStroke();
+  
+  model(deskModel);
 
     // 2D screen-aligned rendering section
     easycam.beginHUD();
