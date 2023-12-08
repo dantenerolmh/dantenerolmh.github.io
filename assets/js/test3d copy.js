@@ -1,4 +1,3 @@
-let desk; //桌子3d模型
 var easycam,
   state = {
     distance: 208,
@@ -9,7 +8,6 @@ var easycam,
 
 function preload() {
   f = loadFont('https://cdnjs.cloudflare.com/ajax/libs/ink/3.1.10/fonts/Roboto/roboto-regular-webfont.ttf');
-  desk = loadModel('assets/models/desk.obj', true);
 }
 
 function setup() {
@@ -36,9 +34,6 @@ function draw() {
   background(0);
   lights();
   box(100);
-
-  normalMaterial(); // For effect
-  model(desk);
 
     // 2D screen-aligned rendering section
     easycam.beginHUD();
