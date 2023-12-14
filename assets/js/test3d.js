@@ -3,9 +3,9 @@ let deskTexture; //桌子材质
 
 var easycam,
   state = {
-    distance: 208,
-    center: [5, 3, -13],
-    rotation: [0.3, -0.4, -0.1, 0.85] //set a particular state for specific camera orientation
+    distance: 384.19,
+    center: [5, 3, -0],
+    rotation: [-0.024, -0.284, 0.093, 0.95] //set a particular state for specific camera orientation
   },
   f, x = 20, y = 20;;
 

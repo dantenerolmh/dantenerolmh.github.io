@@ -4,7 +4,7 @@ let deskTexture; //桌子材质
 var easycam,
   state = {
     distance: 208,
-    center: [5, 3, -13],
+    center: [0, 0, 0],
     rotation: [0.3, -0.4, -0.1, 0.85] //set a particular state for specific camera orientation
   },
   f, x = 20, y = 20;;
@@ -29,6 +29,9 @@ function setup() {
   // set initial camera state
   easycam.setState(state, 1000); // animate to state in 1 second
   easycam.state_reset = state;   // double click reset to defined state
+
+  //
+  easycam.setRotationConstraint(false,true,true);
 
   // use the loaded font
   textFont(f);
